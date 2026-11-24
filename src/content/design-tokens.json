@@ -1,0 +1,14 @@
+{
+  "_note": "Reconstructed from the brief. Replace with 01_Brand/design-tokens.json when supplied and keep src/app/globals.css @theme in sync.",
+  "color": {
+    "charcoal": "#1F2937",
+    "orange": "#F97316",
+    "ivory": "#F4EFE9",
+    "steel": "#9CA3AF",
+    "white": "#FFFFFF"
+  },
+  "font": {
+    "family": "Montserrat",
+    "weights": { "regular": 400, "medium": 500, "semibold": 600, "bold": 700 }
+  }
+}

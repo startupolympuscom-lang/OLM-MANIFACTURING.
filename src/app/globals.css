@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/*
+ * OLM brand tokens — mirror of src/content/design-tokens.json.
+ * Palette: charcoal #1F2937, orange #F97316, warm ivory #F4EFE9, steel #9CA3AF, white.
+ * Orange is an accent only (rules, focus, small markers); it is never used for
+ * small body text because #F97316 on white does not meet WCAG AA contrast.
+ */
+@theme {
+  --color-charcoal: #1f2937;
+  --color-orange: #f97316;
+  --color-ivory: #f4efe9;
+  --color-steel: #9ca3af;
+  --color-white: #ffffff;
+  --color-ink-muted: #4b5563; /* charcoal tint for secondary copy (7.5:1 on white) */
+
+  --font-sans: "Montserrat Variable", "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 3px;
+}
